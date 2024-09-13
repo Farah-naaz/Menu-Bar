@@ -1,0 +1,61 @@
+*{
+  margin: 0;  
+}
+body{
+    width: 100%;
+    height: 500px;
+    background: url(../images/spring-flower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+   
+}
+#main_menu{
+    width: 100%;
+    height: 60px;
+    background-color:palevioletred;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main_menu ul{
+    display: flex;
+    gap: 20px;
+   
+}
+#main_menu ul li a{
+    font-size: 30px;
+    color: purple;
+    position: relative;
+    transition: all linear .5s;
+    font-weight: 600;
+  
+}
+#main_menu ul li a:hover{
+    font-size: 35px;
+}
+#main_menu ul li a:hover{
+    color: rgb(221, 178, 221);
+
+}
+#main_menu ul li a::after{
+    content: '' ;
+    width: 100%;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all linear .4s;
+}
+#main_menu ul li a:hover::after{
+transform:rotate(10deg);
+}
